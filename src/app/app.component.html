@@ -1,2 +1,11 @@
-<h1>My name is {{name}}</h1>
-<h1>I live at {{myHome()}}</h1>
+<div class="container">
+  <div class="alert alert-success" role="alert">
+    New user: <strong>{{name}}</strong>
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" (input)="updateName($event)" value="{{name}}">
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="add()">Add</button>
+</div>
