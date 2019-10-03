@@ -8,11 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string;
 
-  add() {
-    console.log(this.name);
-  }
-
-  updateName(event: any) {
-    this.name = event.target.value;
+  add(name: string) {
+    console.log(name);
+    this.name = name;
   }
 }
