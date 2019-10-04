@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string;
+  showAlert = false;
 
   add(name: string) {
     console.log(name);
     this.name = name;
+    this.showAlert = true;
   }
 }
