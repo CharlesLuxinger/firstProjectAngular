@@ -6,12 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  id: number = 0;
   name: string;
-  showAlert = false;
+  showAlert: boolean = false;
+
+  employees = [];
 
   add(name: string) {
-    console.log(name);
-    this.name = name;
     this.showAlert = true;
+
+    this.employees.push({
+      id: ++this.id,
+      name: this.name
+    });
   }
 }
