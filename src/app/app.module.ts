@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CardEmployeeComponent } from './card-employee/card-employee.component';
+import { FormEmployeeComponent } from './form-employee/form-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardEmployeeComponent
+    CardEmployeeComponent,
+    FormEmployeeComponent
   ],
   imports: [
     BrowserModule,
