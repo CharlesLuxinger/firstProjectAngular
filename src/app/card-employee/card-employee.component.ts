@@ -16,4 +16,10 @@ export class CardEmployeeComponent {
 
   @Input() employee: any;
 
+  getCardStyle() {
+    return {
+      borderWidth: this.employee.id + 'px',
+      backgroundColor: this.employee.id % 2 === 0 ? 'lightblue' : 'lightgreen'
+    }
+  }
 }
