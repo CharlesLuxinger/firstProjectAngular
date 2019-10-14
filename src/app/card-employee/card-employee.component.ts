@@ -22,4 +22,8 @@ export class CardEmployeeComponent {
       backgroundColor: this.employee.id % 2 === 0 ? 'lightblue' : 'lightgreen'
     }
   }
+
+  isAdmin() {
+    return this.employee.name.startsWith('T');
+  }
 }
